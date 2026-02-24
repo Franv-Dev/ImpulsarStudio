@@ -1,80 +1,137 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impulsar | Desarrollo Web y Servicio Técnico</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Impulsar Studio</title>
+
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="antialiased text-slate-900">
 
-    <header class="navbar flex justify-between items-center py-4 px-6 md:px-12 bg-white sticky top-0 z-50 shadow-sm">
-        <div class="logo">
-            <span class="text-2xl font-black italic tracking-tighter">/Impulsar</span>
-        </div>
-        <div class="social-icons space-x-4">
-            <a href="#" class="text-slate-600 hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-slate-600 hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
-        </div>
-    </header>
+<body>
 
-    <main>
-        <section class="hero-section flex flex-col justify-center items-center text-center text-white px-4">
-            <div class="hero-content">
-                <h1 class="text-4xl md:text-7xl font-black uppercase mb-6 leading-none">
-                    Desarrollo Web y <br> Servicio Técnico
-                </h1>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 opacity-90 font-medium">
-                    Soluciones digitales y soporte técnico en Mendoza, para que tu negocio crezca sin límites.
-                </p>
-                <a href="#contacto" class="btn-impulsar">Solicitar presupuesto</a>
-                
-                <div class="mt-12 rating">
-                    <div class="text-yellow-400 text-xl mb-1">★★★★★</div>
-                    <p class="text-xs font-bold tracking-widest uppercase">4.9 Sobre 5</p>
-                </div>
-            </div>
-        </section>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <img src="img/logo_impulsar.png" class="logo">
 
-        <section class="py-24 bg-gray-50 px-6">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-4">Nuestros servicios</h2>
-                <p class="text-slate-500 mb-16">Impulsar ofrece desarrollo web y soporte técnico en Mendoza.</p>
-                
-                <div class="grid md:grid-cols-3 gap-10">
-                    <div class="service-card group">
-                        <div class="overflow-hidden rounded-[24px] mb-6 shadow-lg">
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80" alt="Desarrollo">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-left">Desarrollo</h3>
-                        <p class="text-slate-500 text-left">Creamos sitios y landing pages que reflejan tu marca y capturan clientes.</p>
-                    </div>
+        <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-                    <div class="service-card group">
-                        <div class="overflow-hidden rounded-[24px] mb-6 shadow-lg">
-                            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80" alt="Soporte">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-left">Soporte</h3>
-                        <p class="text-slate-500 text-left">Reparamos y mantenemos computadoras y notebooks con rapidez y confianza.</p>
-                    </div>
+<!-- HERO -->
+<section class="hero">
 
-                    <div class="service-card group">
-                        <div class="overflow-hidden rounded-[24px] mb-6 shadow-lg">
-                            <img src="https://images.unsplash.com/photo-1454165833767-02a698d58745?auto=format&fit=crop&q=80" alt="Asesoría">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-left">Asesoría</h3>
-                        <p class="text-slate-500 text-left">Asistencia rápida y confiable para resolver cualquier problema tecnológico.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="hero-content">
+<h1>Desarrollo Web & Servicio Técnico</h1>
 
-        <section class="bg-dark text-white py-24 px-6">
-            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-10">¿Por qué trabajar con nosotros?</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm opacity-90">
-                        <div class="benefit-item
+<p>
+Digitalizamos tu negocio y potenciamos tu presencia online.
+</p>
+
+<a href="https://wa.me/542615340836" class="btn">
+Solicitar Presupuesto
+</a>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section">
+
+<h2>Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="img/desarrollo_web.png">
+<h3>Desarrollo Web</h3>
+<p>Sitios profesionales rápidos y optimizados.</p>
+</div>
+
+<div class="card">
+<img src="img/e-commerce.png">
+<h3>E-Commerce</h3>
+<p>Tiendas online listas para vender.</p>
+</div>
+
+<div class="card">
+<img src="img/soporte_tecnico.png">
+<h3>Soporte Técnico</h3>
+<p>PC, notebooks y consolas.</p>
+</div>
+
+<div class="card">
+<img src="img/asesoria.png">
+<h3>Asesoría Digital</h3>
+<p>Transformación digital para empresas.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PLANES -->
+<section id="planes" class="section dark">
+
+<h2>Planes</h2>
+
+<div class="plan">
+
+<h3>Web Profesional</h3>
+
+<p class="precio">$185.000 ARS</p>
+
+<ul>
+<li>Diseño moderno</li>
+<li>Optimización SEO</li>
+<li>Hosting + Dominio</li>
+<li>Entrega rápida</li>
+</ul>
+
+<p class="mensual">
+Mantenimiento desde $50.000 / mes
+</p>
+
+</div>
+
+</section>
+
+<!-- TRABAJOS -->
+<section id="trabajos" class="section">
+
+<h2>Trabajos Realizados</h2>
+
+<p>
+Contamos con proyectos reales desarrollados para empresas y negocios locales.
+</p>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section dark">
+
+<h2>Contacto</h2>
+
+<p>impulsards@gmail.com</p>
+<p>+54 261 534 0836</p>
+
+<a href="https://wa.me/542615340836" class="btn">
+Hablar por WhatsApp
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Impulsar Studio</p>
+</footer>
+
+</body>
+</html>

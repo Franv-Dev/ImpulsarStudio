@@ -1,104 +1,183 @@
-/* CONFIGURACIÓN MAESTRA */
-:root {
-    --violeta: #5B44C1;
-    --dark: #2D3248;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+body{
+background:#0b1220;
+color:white;
 }
 
-/* HERO CON EFECTO FIXED */
-.hero-section {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
-                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Mantiene la imagen quieta al hacer scroll */
-    min-height: 85vh;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#070d18;
+position:fixed;
+width:100%;
+z-index:1000;
 }
 
-/* SECCIÓN OPINIÓN (PARALLAX 2) */
-.opinion-section {
-    position: relative;
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.logo{
+height:45px;
 }
 
-/* ELEMENTOS DE DISEÑO */
-.bg-dark { background-color: var(--dark); }
-
-.bg-violet-impulsar { background-color: var(--violeta); }
-
-.btn-impulsar {
-    background-color: var(--violeta);
-    color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-weight: 800;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    display: inline-block;
+.navbar ul{
+display:flex;
+gap:30px;
+list-style:none;
 }
 
-.btn-impulsar:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(91, 68, 193, 0.4);
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-.service-card img {
-    transition: transform 0.5s ease;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),
+rgba(0,0,0,.8)),
+url("img/fondo1.png");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-.service-card:hover img {
-    transform: scale(1.1);
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
 }
 
-/* INPUTS ESTILO MODERN CLOUD */
-.opinion-input {
-    width: 100%;
-    background: #F3F4F6;
-    border: none;
-    border-radius: 15px;
-    padding: 12px 20px;
-    color: #1a1a1a;
-    margin-top: 4px;
-    outline: none;
+.hero p{
+font-size:20px;
+margin-bottom:30px;
 }
 
-.contact-input {
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 12px 18px;
-    outline: none;
-    transition: border-color 0.3s;
+/* BOTON */
+
+.btn{
+background:#7c3aed;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
 }
 
-.contact-input:focus {
-    border-color: var(--violeta);
+.btn:hover{
+background:#5b21b6;
 }
 
-/* BOTÓN FORMULARIO VIOLETA */
-.violet-button {
-    background-color: var(--violeta);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+/* SECCIONES */
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.dark{
+background:#070d18;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card-img{
+width:120px;
+height:120px;
+background:#16243b;
+border-radius:50%;
+margin:0 auto 20px auto;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+/* PLAN */
+
+.plan{
+background:#111827;
+max-width:500px;
+margin:auto;
+padding:40px;
+border-radius:12px;
+}
+
+.precio{
+font-size:32px;
+margin:20px 0;
+color:#7c3aed;
+}
+
+.plan ul{
+list-style:none;
+margin:20px 0;
+}
+
+.plan li{
+margin:10px 0;
+}
+
+.mensual{
+margin-top:20px;
+opacity:.8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#050a14;
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero-section, .opinion-section {
-        background-attachment: scroll; /* Mejora rendimiento en móviles */
-    }
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.navbar{
+padding:15px;
+}
+
 }
