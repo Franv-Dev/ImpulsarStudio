@@ -1,0 +1,104 @@
+/* CONFIGURACIÓN MAESTRA */
+:root {
+    --violeta: #5B44C1;
+    --dark: #2D3248;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* HERO CON EFECTO FIXED */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene la imagen quieta al hacer scroll */
+    min-height: 85vh;
+}
+
+/* SECCIÓN OPINIÓN (PARALLAX 2) */
+.opinion-section {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ELEMENTOS DE DISEÑO */
+.bg-dark { background-color: var(--dark); }
+
+.bg-violet-impulsar { background-color: var(--violeta); }
+
+.btn-impulsar {
+    background-color: var(--violeta);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-impulsar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(91, 68, 193, 0.4);
+}
+
+.service-card img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+/* INPUTS ESTILO MODERN CLOUD */
+.opinion-input {
+    width: 100%;
+    background: #F3F4F6;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    color: #1a1a1a;
+    margin-top: 4px;
+    outline: none;
+}
+
+.contact-input {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 18px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-input:focus {
+    border-color: var(--violeta);
+}
+
+/* BOTÓN FORMULARIO VIOLETA */
+.violet-button {
+    background-color: var(--violeta);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-section, .opinion-section {
+        background-attachment: scroll; /* Mejora rendimiento en móviles */
+    }
+}
