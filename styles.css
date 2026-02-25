@@ -160,3 +160,321 @@ body{
 }
 
 }
+/* ================= TESTIMONIOS (MARQUEE EFFECT) ================= */
+
+:root {
+    --duration: 40s;
+    --gap: 1rem;
+}
+
+/* Contenedor del movimiento */
+.marquee-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 2rem 0;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    gap: var(--gap);
+    animation: marquee var(--duration) linear infinite;
+    width: max-content;
+}
+
+/* Pausar al pasar el mouse */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+/* Animación de desplazamiento */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - var(--gap)/2)); }
+}
+
+/* Estilo de la Tarjeta de Testimonio */
+.testimonial-card {
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    border-top: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    width: 320px;
+    flex-shrink: 0;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.testimonial-card:hover {
+    background: linear-gradient(to bottom, #334155, #1e293b);
+}
+
+.author-info {
+    display: flex;
+    align-items: center; /* <‑‑ not “items-center” */
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.author-name p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+/* ================= PRECIOS CSS ================= */
+
+/* ================= PRICING DARK STYLE ================= */
+
+.pricing-dark {
+    padding: 100px 8%;
+    background-color: #0b1a33; /* Respetando tu color base */
+    color: white;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-subtitle {
+    color: #94a3b8;
+    margin-top: 15px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Tarjetas Oscuras con Glassmorphism leve */
+.price-card-dark {
+    background: #1e293b; /* Color de tus cards originales */
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 45px 35px;
+    transition: all 0.4s ease;
+    position: relative;
+    text-align: center;
+}
+
+/* =========================================
+   MÓDULO: PLANES (DIMENSIONES Y ESTILO)
+   ========================================= */
+.pricing-section {
+    padding: 100px 0;
+    background-color: #0b1a33; /* Fondo oscuro base */
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Dimensiones corregidas */
+    gap: 30px;
+    align-items: stretch;
+}
+
+.price-card {
+    background: #1e293b; /* Color de card original */
+    border: 1px solid #334155;
+    border-radius: 25px;
+    padding: 50px 35px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #5B44C1;
+}
+
+/* Plan Destacado Violeta */
+.price-card.popular {
+    border: 2px solid #5B44C1;
+    transform: scale(1.05);
+    z-index: 10;
+    background: linear-gradient(145deg, #1e293b, #111b2d);
+}
+
+.popular-label {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #5B44C1;
+    padding: 6px 25px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.text-violet { color: #5B44C1; }
+
+.plan-tag {
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.plan-intro {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    min-height: 50px;
+}
+
+/* Listas de Beneficios */
+.feature-checklist {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.feature-checklist li {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+}
+
+.feature-checklist i {
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.plan-target {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* Botones de Planes */
+.btn-plan-violet {
+    background: #5B44C1;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-plan-outline {
+    border: 1px solid #334155;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-plan-outline:hover {
+    background: #334155;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .price-card.popular {
+        transform: scale(1);
+    }
+}
+/* =========================================
+   ESTILOS DE MANTENIMIENTO (NUEVO)
+   ========================================= */
+.maintenance-box {
+    margin-top: 60px;
+    background: rgba(91, 68, 193, 0.05);
+    border: 1px dashed #5B44C1;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.m-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.m-tag {
+    background: #5B44C1;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.m-price {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.m-price span {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.m-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.m-list {
+    list-style: none;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.m-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* Ajuste Responsivo para la caja de mantenimiento */
+@media (max-width: 768px) {
+    .m-header { text-align: center; justify-content: center; }
+}
