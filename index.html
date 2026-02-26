@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impulsar Studio</title>
-
+    <meta name="description" content="Impulsar Studio - Desarrollo Web, E-Commerce y Soporte Técnico en Mendoza.">
+    <title>Impulsar Studio | Soluciones Digitales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- ================= HERO ================= -->
-
 <header class="hero">
-
-    <nav class="navbar">
-        <img src="img/logo_impulsar.png" class="logo">
+    <nav class="navbar" aria-label="Navegación Principal">
+        <img src="img/logo_impulsar.png" class="logo" alt="Logo de Impulsar Studio">
     </nav>
 
     <div class="hero-content">
@@ -24,232 +20,282 @@
         <p>Diseñamos páginas web, tiendas online y soluciones tecnológicas enfocadas en atraer clientes, mejorar tu presencia digital y hacer crecer tu empresa.</p>
         <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
     </div>
-
 </header>
 
+<main>
+    
+    <section id="servicios" class="services">
+        <h2 class="section-title">Servicios</h2>
+        <div class="services-grid">
+            
+            <article class="service-card">
+                <div class="service-image"><img src="img/desarrollo_web.png" alt="Ilustración Desarrollo Web"></div>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios profesionales rápidos y optimizados.</p>
+            </article>
+            
+            <article class="service-card">
+                <div class="service-image"><img src="img/e-commerce.png" alt="Ilustración E-commerce"></div>
+                <h3>E-Commerce</h3>
+                <p>Tiendas online listas para vender.</p>
+            </article>
+            
+            <article class="service-card">
+                <div class="service-image"><img src="img/soporte_tecnico.png" alt="Ilustración Soporte Técnico"></div>
+                <h3>Soporte Técnico</h3>
+                <p>PC, notebooks y consolas.</p>
+            </article>
+            
+            <article class="service-card">
+                <div class="service-image"><img src="img/asesoria.png" alt="Ilustración Asesoría Digital"></div>
+                <h3>Asesoría Digital</h3>
+                <p>Transformación digital para empresas.</p>
+            </article>
 
-<!-- ================= SERVICIOS ================= -->
+        </div>
+    </section>
 
-<section id="servicios" class="services">
-
-    <h2 class="section-title">Servicios</h2>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="img/desarrollo_web.png">
-            </div>
-
-            <h3>Desarrollo Web</h3>
-            <p>Sitios profesionales rápidos y optimizados.</p>
+    <section class="opinion-section">
+        <div class="text-center">
+            <h2 class="section-title">Opiniones y Testimonios</h2>
+            <p class="section-subtitle">Lo que dicen nuestros clientes sobre nosotros</p>
         </div>
 
-        <div class="service-card">
-            <div class="service-image">
-                <img src="img/e-commerce.png">
-            </div>
-
-            <h3>E-Commerce</h3>
-            <p>Tiendas online listas para vender.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="img/soporte_tecnico.png">
-            </div>
-
-            <h3>Soporte Técnico</h3>
-            <p>PC, notebooks y consolas.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="img/asesoria.png">
-            </div>
-
-            <h3>Asesoría Digital</h3>
-            <p>Transformación digital para empresas.</p>
-        </div>
-
-    </div>
-
-</section>
-<section class="services" style="background: #0b1a33; padding-bottom: 100px;">
-    <div style="text-align: center; margin-bottom: 50px;">
-        <h2 class="section-title">Opiniones y Testimonios</h2>
-        <p style="color: #94a3b8; font-size: 18px;">Lo que dicen nuestros clientes sobre nosotros</p>
-    </div>
-
-    <div class="marquee-container">
-        <div class="marquee-content">
-            <div class="testimonial-card">
-                <div class="author-info">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" class="avatar">
-                    <div class="author-name">
-                        <h4>metanoiaholisty</h4>
-                        <p>@emmaai</p>
+        <div class="marquee-container">
+            <div class="marquee-content" id="marquee-content">
+                
+                <figure class="testimonial-card">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" class="avatar" alt="Avatar Cliente">
+                        <figcaption class="author-name">
+                            <h4>metanoiaholisty</h4>
+                            <p>@emmaai</p>
+                        </figcaption>
                     </div>
-                </div>
-                <p class="testimonial-text">"Me crearon una pagina web muy profesional y funcional,con muchas funcionalidades que me ayudaron a impulsar mi negocio."</p>
-            </div>
+                    <blockquote class="testimonial-text">"Me crearon una pagina web muy profesional y funcional."</blockquote>
+                </figure>
+                
+                <figure class="testimonial-card">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" class="avatar" alt="Avatar Cliente">
+                        <figcaption class="author-name">
+                            <h4>David Park</h4>
+                            <p>@davidtech</p>
+                        </figcaption>
+                    </div>
+                    <blockquote class="testimonial-text">"The API integration is flawless. 60% reduction in time."</blockquote>
+                </figure>
 
-            <div class="testimonial-card">
-                <div class="author-info">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" class="avatar">
-                    <div class="author-name">
-                        <h4>David Park</h4>
-                        <p>@davidtech</p>
+                <figure class="testimonial-card">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" class="avatar" alt="Avatar Cliente">
+                        <figcaption class="author-name">
+                            <h4>metanoiaholisty</h4>
+                            <p>@emmaai</p>
+                        </figcaption>
                     </div>
-                </div>
-                <p class="testimonial-text">"The API integration is flawless. We've reduced our development time by 60% since implementing this solution."</p>
-            </div>
+                    <blockquote class="testimonial-text">"Me crearon una pagina web muy profesional y funcional."</blockquote>
+                </figure>
 
-            <div class="testimonial-card">
-                <div class="author-info">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop" class="avatar">
-                    <div class="author-name">
-                        <h4>Sofia Rodriguez</h4>
-                        <p>@sofiaml</p>
+                <figure class="testimonial-card">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" class="avatar" alt="Avatar Cliente">
+                        <figcaption class="author-name">
+                            <h4>David Park</h4>
+                            <p>@davidtech</p>
+                        </figcaption>
                     </div>
-                </div>
-                <p class="testimonial-text">"Finally, an AI tool that actually understands context! The accuracy in natural language processing is impressive."</p>
-            </div>
+                    <blockquote class="testimonial-text">"The API integration is flawless. 60% reduction in time."</blockquote>
+                </figure>
 
-            <div class="testimonial-card">
-                <div class="author-info">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" class="avatar">
-                    <div class="author-name">
-                        <h4>Emma Thompson</h4>
-                        <p>@emmaai</p>
-                    </div>
-                </div>
-                <p class="testimonial-text">"Using this AI platform has transformed how we handle data analysis. The speed and accuracy are unprecedented."</p>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="author-info">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop" class="avatar">
-                    <div class="author-name">
-                        <h4>Sofia Rodriguez</h4>
-                        <p>@sofiaml</p>
-                    </div>
-                </div>
-                <p class="testimonial-text">"Finally, an AI tool that actually understands context! The accuracy in natural language processing is impressive."</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="precios" class="pricing-section">
-    <div class="container">
-        <div class="pricing-header text-center">
-            <h2 class="section-title">Planes Simples y Transparentes</h2>
-            <p>Elige el plan que mejor se adapte a tu proyecto. Sin costos ocultos.</p>
-            <p>Soluciones digitales escalables para cada etapa de tu negocio.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="price-card">
-                <div class="card-header">
-                    <span class="plan-tag">🚀 Plan Emprendedor</span>
-                    <p class="plan-intro">Tu negocio online desde hoy</p>
-                    <div class="price-display">
-                        <span class="number">$175.000</span>
-                        <span class="time">ARS</span>
-                    </div>
-                </div>
-                <ul class="feature-checklist">
-                    <li><i class="fas fa-check"></i> Página web profesional</li>
-                    <li><i class="fas fa-check"></i> Diseño moderno y responsive</li>
-                    <li><i class="fas fa-check"></i> Integración WhatsApp</li>
-                    <li><i class="fas fa-check"></i> Formulario de contacto</li>
-                    <li><i class="fas fa-check"></i> Optimización inicial SEO</li>
-                    <li><i class="fas fa-check"></i> Adaptada a celulares y PC</li>
-                </ul>
-                <p class="plan-target">👉 Ideal para emprendedores y pequeños negocios.</p>
-                <a href="#contacto" class="btn-plan-outline">Elegir Plan</a>
-            </div>
-
-            <div class="price-card popular">
-                <div class="popular-label">⭐ MÁS ELEGIDO</div>
-                <div class="card-header">
-                    <span class="plan-tag text-violet">💼 Plan Profesional</span>
-                    <p class="plan-intro">Presencia digital sólida para empresas</p>
-                    <div class="price-display">
-                        <span class="number">$320.000</span>
-                        <span class="time">ARS</span>
-                    </div>
-                </div>
-                <ul class="feature-checklist">
-                    <li><i class="fas fa-check text-violet"></i> Sitio web personalizado</li>
-                    <li><i class="fas fa-check text-violet"></i> Secciones a medida</li>
-                    <li><i class="fas fa-check text-violet"></i> Integración redes sociales</li>
-                    <li><i class="fas fa-check text-violet"></i> Formularios avanzados</li>
-                    <li><i class="fas fa-check text-violet"></i> Optimización SEO</li>
-                    <li><i class="fas fa-check text-violet"></i> Mayor velocidad y rendimiento</li>
-                    <li><i class="fas fa-check text-violet"></i> Diseño orientado a ventas</li>
-                </ul>
-                <p class="plan-target">👉 Ideal para pymes y empresas en crecimiento.</p>
-                <a href="#contacto" class="btn-plan-violet">Comenzar Ahora</a>
-            </div>
-
-            <div class="price-card">
-                <div class="card-header">
-                    <span class="plan-tag">🛒 Plan Ecommerce</span>
-                    <p class="plan-intro">Vendé online 24/7</p>
-                    <div class="price-display">
-                        <span class="number">$550.000</span>
-                        <span class="time">ARS</span>
-                    </div>
-                </div>
-                <ul class="feature-checklist">
-                    <li><i class="fas fa-check"></i> Tienda online profesional</li>
-                    <li><i class="fas fa-check"></i> Productos ilimitados</li>
-                    <li><i class="fas fa-check"></i> Carrito de compras</li>
-                    <li><i class="fas fa-check"></i> Medios de pago integrados</li>
-                    <li><i class="fas fa-check"></i> Panel autogestionable</li>
-                    <li><i class="fas fa-check"></i> Gestión de pedidos</li>
-                    <li><i class="fas fa-check"></i> Optimización Ecommerce</li>
-                </ul>
-                <p class="plan-target">👉 Ideal para tiendas y comercios.</p>
-                <a href="#contacto" class="btn-plan-outline">Elegir Plan</a>
             </div>
         </div>
 
-        <div class="maintenance-box">
-            <div class="m-header">
-                <h3>🔧 Mantenimiento Web <span class="m-tag">Mensual Obligatorio</span></h3>
-                <div class="m-price">$50.000 <span>ARS / mes</span></div>
+        <div class="opinion-form-wrapper">
+            <div class="opinion-form-card">
+                <h3>¡Déjanos tu opinión!</h3>
+                <form id="add-opinion-form">
+                    <input type="text" id="user-name" placeholder="Tu nombre o usuario" required>
+                    <textarea id="user-comment" placeholder="Cuéntanos tu experiencia..." required></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%; border:none; cursor:pointer;">Publicar Opinión</button>
+                </form>
             </div>
-            <div class="m-grid">
-                <ul class="m-list">
-                    <li>✔ Hosting profesional</li>
-                    <li>✔ Dominio incluido</li>
-                    <li>✔ Soporte técnico</li>
-                </ul>
-                <ul class="m-list">
-                    <li>✔ Actualizaciones de seguridad</li>
-                    <li>✔ Cambios de contenido básico</li>
-                    <li>✔ Optimización continua</li>
-                </ul>
-            </div>
-            <p class="m-note">📌 <strong>Nota:</strong> Incluye modificaciones menores mensuales. No incluye rediseños completos ni nuevas funcionalidades.</p>
         </div>
-    </div>
-</section>
-<!-- ================= FOOTER ================= -->
+    </section>
+
+    <section id="precios" class="pricing-section">
+        <div class="container">
+            <header class="pricing-header text-center">
+                <h2 class="section-title">💰 Planes Impulsar Studio</h2>
+                <p class="section-subtitle">Soluciones digitales escalables para cada etapa de tu negocio.</p>
+            </header>
+
+            <div class="pricing-grid">
+                
+                <article class="price-card">
+                    <div class="card-header">
+                        <span class="plan-tag">🚀 Plan Emprendedor</span>
+                        <p class="plan-intro">Tu negocio online desde hoy</p>
+                        <div class="price-display"><span class="number">$175.000</span><span class="time">ARS</span></div>
+                    </div>
+                    <ul class="feature-checklist">
+                        <li><i class="fas fa-check"></i> Página web profesional</li>
+                        <li><i class="fas fa-check"></i> Diseño moderno y responsive</li>
+                        <li><i class="fas fa-check"></i> Integración WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Formulario de contacto</li>
+                        <li><i class="fas fa-check"></i> Optimización inicial SEO</li>
+                        <li><i class="fas fa-check"></i> Adaptada a celulares y PC</li>
+                    </ul>
+                    <p class="plan-target">👉 Ideal para emprendedores y pequeños negocios.</p>
+                    <a href="https://wa.me/542615340836?text=Hola!%20Me%20interesa%20el%20Plan%20Emprendedor." target="_blank" rel="noopener noreferrer" class="btn-plan-violet">Elegir Plan</a>
+                </article>
+
+                <article class="price-card popular">
+                    <div class="card-header">
+                        <span class="plan-tag">💼 Plan Profesional</span>
+                        <p class="plan-intro">Presencia digital sólida para empresas</p>
+                        <div class="price-display"><span class="number">$320.000</span><span class="time">ARS</span></div>
+                    </div>
+                    <ul class="feature-checklist">
+                        <li><i class="fas fa-check text-violet"></i> Sitio web completo personalizado</li>
+                        <li><i class="fas fa-check text-violet"></i> Secciones a medida</li>
+                        <li><i class="fas fa-check text-violet"></i> Integración redes sociales</li>
+                        <li><i class="fas fa-check text-violet"></i> Formularios avanzados</li>
+                        <li><i class="fas fa-check text-violet"></i> Optimización SEO</li>
+                        <li><i class="fas fa-check text-violet"></i> Mayor velocidad y rendimiento</li>
+                        <li><i class="fas fa-check text-violet"></i> Diseño orientado a ventas</li>
+                    </ul>
+                    <p class="plan-target">👉 Ideal para pymes y empresas en crecimiento.</p>
+                    <a href="https://wa.me/542615340836?text=Hola!%20Me%20interesa%20el%20Plan%20Profesional." target="_blank" rel="noopener noreferrer" class="btn-plan-violet">Comenzar Ahora</a>
+                </article>
+
+                <article class="price-card">
+                    <div class="card-header">
+                        <span class="plan-tag">🛒 Plan Ecommerce</span>
+                        <p class="plan-intro">Vendé online 24/7</p>
+                        <div class="price-display"><span class="number">$550.000</span><span class="time">ARS</span></div>
+                    </div>
+                    <ul class="feature-checklist">
+                        <li><i class="fas fa-check"></i> Tienda online profesional</li>
+                        <li><i class="fas fa-check"></i> Productos ilimitados</li>
+                        <li><i class="fas fa-check"></i> Carrito de compras</li>
+                        <li><i class="fas fa-check"></i> Medios de pago integrados</li>
+                        <li><i class="fas fa-check"></i> Panel autogestionable</li>
+                        <li><i class="fas fa-check"></i> Gestión de pedidos</li>
+                        <li><i class="fas fa-check"></i> Optimización Ecommerce</li>
+                    </ul>
+                    <p class="plan-target">👉 Ideal para tiendas y comercios.</p>
+                    <a href="https://wa.me/542615340836?text=Hola!%20Me%20interesa%20el%20Plan%20Ecommerce." target="_blank" rel="noopener noreferrer" class="btn-plan-violet">Elegir Plan</a>
+                </article>
+
+            </div>
+
+            <div class="maintenance-section-centered">
+                <article class="price-card maintenance-card">
+                    <div class="popular-label" style="background: #334155;">SERVICIO MENSUAL</div>
+                    <div class="card-header">
+                        <span class="plan-tag">🔧 Mantenimiento Web</span>
+                        <div class="price-display">
+                            <span class="number">$50.000</span>
+                            <span class="time">ARS / mes</span>
+                        </div>
+                    </div>
+                    <ul class="feature-checklist maintenance-list">
+                        <li><i class="fas fa-check text-violet"></i> Hosting y Dominio incluido</li>
+                        <li><i class="fas fa-check text-violet"></i> Soporte técnico y Seguridad</li>
+                        <li><i class="fas fa-check text-violet"></i> Cambios menores de contenido</li>
+                        <li><i class="fas fa-check text-violet"></i> Optimización continua</li>
+                    </ul>
+                    <footer class="maintenance-footer">
+                        <p>📌 Modificaciones menores mensuales incluidas.</p>
+                        <p class="m-limit">🚫 No incluye rediseños completos ni nuevas funcionalidades.</p>
+                    </footer>
+                </article>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
+            </header>
+            
+            <div class="contact-grid">
+                <aside class="contact-info">
+                    <h3>Vías de comunicación</h3>
+                    <p>Escríbenos directamente o síguenos en nuestras redes.</p>
+                    
+                    <div class="contact-links">
+                        <a href="https://wa.me/542615340836" target="_blank" class="contact-item whatsapp" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/tu_usuario" target="_blank" class="contact-item instagram" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="mailto:impulsards@gmail.com" class="contact-item email">
+                            <i class="fas fa-envelope"></i>
+                            <span>impulsards@gmail.com</span>
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="contact-form-card">
+                    <form action="https://formspree.io/f/tu_id_aca" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Tu Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu negocio..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; border:none; cursor:pointer;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 <footer class="footer">
-
-    <img src="img/logo_impulsar.png" class="footer-logo">
-
-    <p>📞 +54 261 534 0836</p>
-    <p>✉ impulsards@gmail.com</p>
-
-    <p class="copy">
-        © 2026 Impulsar Studio
-    </p>
-
+    <img src="img/logo_impulsar.png" class="footer-logo" alt="Logo de Impulsar Studio Footer">
+    <p class="copy">© 2026 Impulsar Studio</p>
 </footer>
+
+<script>
+    document.getElementById('add-opinion-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('user-name').value;
+        const comment = document.getElementById('user-comment').value;
+        const marquee = document.getElementById('marquee-content');
+        
+        const newCard = document.createElement('figure');
+        newCard.className = 'testimonial-card';
+        newCard.innerHTML = `
+            <div class="author-info">
+                <img src="https://ui-avatars.com/api/?name=${name}&background=5B44C1&color=fff" class="avatar" alt="Avatar">
+                <figcaption class="author-name">
+                    <h4>${name}</h4>
+                    <p>@cliente</p>
+                </figcaption>
+            </div>
+            <blockquote class="testimonial-text">"${comment}"</blockquote>
+        `;
+        marquee.appendChild(newCard);
+        this.reset();
+        alert('¡Gracias por tu opinión!');
+    });
+</script>
 
 </body>
 </html>
