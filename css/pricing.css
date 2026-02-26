@@ -68,15 +68,17 @@
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 1100px;
+  gap: 30px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    max-width: 1100px;
+    gap: 20px;
   }
 }
 
@@ -242,8 +244,11 @@
 }
 
 /* Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .price-card.popular {
     transform: scale(1);
+  }
+  .price-card.popular:hover {
+    transform: translateY(-10px);
   }
 }

@@ -61,3 +61,10 @@
   margin-top: 10px;
   color: #cbd5e1;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .service-image {
+    height: 180px;
+  }
+}
