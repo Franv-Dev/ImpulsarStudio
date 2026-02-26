@@ -1,0 +1,42 @@
+/* ================= SPOTLIGHT CARD EFFECT ================= */
+.glow-border {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 3px solid transparent; /* Groso intermedio */
+
+  /* Gradiente blanco simple que sigue al ratón localmente */
+  background: radial-gradient(
+      400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(255, 255, 255, 0.8),
+      transparent 40%
+    )
+    border-box;
+
+  /* Máscara para ocultar el interior y dejar solo el borde */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.services-grid:hover .glow-border::before,
+.pricing-grid:hover .glow-border::before {
+  opacity: 1;
+}

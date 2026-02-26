@@ -1,0 +1,87 @@
+/* ================= TESTIMONIOS (MARQUEE EFFECT) ================= */
+
+:root {
+  --duration: 25s;
+  --gap: 1rem;
+}
+
+/* Contenedor del movimiento */
+.marquee-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 2rem 0;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marquee-content {
+  display: flex;
+  gap: var(--gap);
+  animation: marquee var(--duration) linear infinite;
+  width: max-content;
+}
+
+/* Animación de desplazamiento */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - var(--gap) / 2));
+  }
+}
+
+/* Estilo de la Tarjeta de Testimonio */
+.testimonial-card {
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  border-top: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  width: 320px;
+  flex-shrink: 0;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background: linear-gradient(to bottom, #334155, #1e293b);
+}
+
+.author-info {
+  display: flex;
+  align-items: center; /* <‑‑ not “items-center” */
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.author-name p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}

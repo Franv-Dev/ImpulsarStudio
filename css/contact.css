@@ -1,0 +1,113 @@
+/* =========================================
+   CONTACTO (NUEVO)
+   ========================================= */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #0b1a33; /* Dark elegant background matching site */
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: rgba(30, 41, 59, 0.5); /* Semi-transparent slate for contrast */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-wrapper {
+  padding-right: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-form .form-group {
+  margin-bottom: 20px;
+}
+
+.legal-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.legal-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid #334155;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.legal-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.contact-social-wrapper {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.social-item:hover {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: #2563eb;
+  transform: translateX(5px);
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+}
+
+/* Responsivo para Contacto */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px;
+  }
+  .contact-form-wrapper {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+  }
+  .contact-social-wrapper {
+    padding-left: 0;
+  }
+}
