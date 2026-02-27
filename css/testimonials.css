@@ -47,11 +47,13 @@
   width: 320px;
   flex-shrink: 0;
   text-align: left;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .testimonial-card:hover {
   background: linear-gradient(to bottom, #334155, #1e293b);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .author-info {
