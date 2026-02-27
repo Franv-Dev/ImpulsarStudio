@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/glow.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/workflow.css" />
   </head>
 
   <body>
@@ -63,31 +64,82 @@
             <li><a href="#testimonios">Testimonios</a></li>
           </ul>
 
-          <a
-            href="https://wa.me/5492615340836?text=Hola%20Impulsar%20Studio!%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta."
-            target="_blank"
-            class="nav-cta"
-            >Nuestros Servicios</a
-          >
+          <a href="proyectos.html" class="nav-cta">Proyectos</a>
         </div>
       </header>
 
       <div class="hero-content" data-animation="fade-up" data-delay="200">
-        <h1>Impulsamos tu negocio hacia el mundo digital</h1>
+        <h1>Impulsamos tu negocio al mundo digital</h1>
         <p>
           Diseñamos páginas web, tiendas online y soluciones tecnológicas
           <span class="hide-mobile"
             >enfocadas en atraer clientes, mejorar tu presencia digital y </span
-          >para hacer crecer tu empresa.
+          >hacer crecer tu empresa.
         </p>
-        <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+        <div
+          class="hero-buttons"
+          style="
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="#precios" class="btn-primary">Solicitar Presupuesto</a>
+          <a
+            href="https://wa.me/5492615340836?text=Hola%20Impulsar%20Studio!%20Me%20interesa%20hablar%20sobre%20un%20proyecto."
+            target="_blank"
+            class="btn-outline-white"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              color: white;
+              padding: 14px 28px;
+              border-radius: 8px;
+              text-decoration: none;
+              transition: 0.3s;
+              background: rgba(255, 255, 255, 0.05);
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Hablar por WhatsApp
+          </a>
+        </div>
       </div>
     </header>
+
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin: 40px auto 20px;
+      "
+    />
 
     <!-- ================= SERVICIOS ================= -->
 
     <section id="servicios" class="services">
-      <h2 class="section-title" data-animation="fade-up">Servicios</h2>
+      <div
+        style="text-align: center; margin-bottom: 30px"
+        data-animation="fade-up"
+      >
+        <h2 class="section-title" style="margin-bottom: 5px">¿Qué hacemos?</h2>
+        <p style="color: #cbd5e1; font-size: 1.1rem">Nuestros Servicios</p>
+      </div>
 
       <div class="services-grid">
         <div class="service-card" data-animation="fade-up" data-delay="100">
@@ -96,7 +148,7 @@
           </div>
 
           <h3>Desarrollo Web</h3>
-          <p>Sitios profesionales rápidos y optimizados.</p>
+          <p>Sitios modernos, rápidos y optimizados para atraer clientes.</p>
         </div>
 
         <div class="service-card" data-animation="fade-up" data-delay="200">
@@ -105,7 +157,7 @@
           </div>
 
           <h3>E-Commerce</h3>
-          <p>Tiendas online listas para vender.</p>
+          <p>Vendé tus productos 24/7 con una tienda profesional.</p>
         </div>
 
         <div class="service-card" data-animation="fade-up" data-delay="300">
@@ -114,7 +166,7 @@
           </div>
 
           <h3>Soporte Técnico</h3>
-          <p>PC, notebooks y consolas.</p>
+          <p>Reparación y mantenimiento de PC, notebooks y consolas.</p>
         </div>
 
         <div class="service-card" data-animation="fade-up" data-delay="400">
@@ -123,10 +175,110 @@
           </div>
 
           <h3>Asesoría Digital</h3>
-          <p>Transformación digital para empresas.</p>
+          <p>Digitalizamos tu negocio y optimizamos tu presencia online.</p>
         </div>
       </div>
     </section>
+
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin: 20px auto 60px;
+      "
+    />
+
+    <!-- ================= CÓMO TRABAJAMOS ================= -->
+    <section id="como-trabajamos" class="workflow-section">
+      <div
+        style="text-align: center; margin-bottom: 20px"
+        data-animation="fade-up"
+      >
+        <h2 class="section-title" style="margin-bottom: 5px">
+          Cómo Trabajamos
+        </h2>
+        <p style="color: #cbd5e1; font-size: 1.1rem">
+          Tu proyecto en 4 simples pasos
+        </p>
+      </div>
+
+      <div class="workflow-grid">
+        <!-- Paso 1 -->
+        <div class="workflow-step" data-animation="fade-up" data-delay="100">
+          <div class="step-number">1</div>
+          <div class="workflow-image">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop"
+              alt="Análisis de negocio"
+            />
+          </div>
+          <h3>Analizamos tu negocio</h3>
+          <p>
+            Estudiamos tus objetivos, tu competencia y tu público ideal para
+            armar una estrategia digital ganadora.
+          </p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="workflow-step" data-animation="fade-up" data-delay="200">
+          <div class="step-number">2</div>
+          <div class="workflow-image">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop"
+              alt="Diseño web"
+            />
+          </div>
+          <h3>Diseñamos tu web</h3>
+          <p>
+            Creamos un diseño atractivo, moderno y enfocado en convertir a tus
+            visitantes en clientes reales.
+          </p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="workflow-step" data-animation="fade-up" data-delay="300">
+          <div class="step-number">3</div>
+          <div class="workflow-image">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop"
+              alt="Publicación online"
+            />
+          </div>
+          <h3>Publicamos online</h3>
+          <p>
+            Lanzamos tu sitio al mundo, asegurándonos de que sea súper rápido y
+            se vea perfecto en cualquier.
+          </p>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="workflow-step" data-animation="fade-up" data-delay="400">
+          <div class="step-number">4</div>
+          <div class="workflow-image">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&h=300&fit=crop"
+              alt="Recibir clientes"
+            />
+          </div>
+          <h3>Recibís clientes</h3>
+          <p>
+            Tu negocio ya está preparado para vender las 24 horas del día. Es el
+            momento de crecer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin: 20px auto 60px;
+      "
+    />
+
     <section
       id="testimonios"
       class="services"
@@ -336,6 +488,16 @@
         </div>
       </div>
     </section>
+
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin: 40px auto 0;
+      "
+    />
+
     <section id="precios" class="pricing-section">
       <div class="container">
         <div class="pricing-header text-center" data-animation="fade-up">
@@ -841,6 +1003,15 @@
       </div>
     </section>
 
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin: 0 auto 60px;
+      "
+    />
+
     <!-- ================= CONTACTO (NUEVO) ================= -->
     <section id="contacto" class="contact-section">
       <div
@@ -1027,7 +1198,11 @@
               </a>
             </li>
             <li>
-              <a href="#" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/impulsarstudio"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <!-- LinkedIn Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
@@ -1044,20 +1219,20 @@
           <div class="footer-column">
             <h3>Servicios</h3>
             <ul>
-              <li><a href="#servicios">Desarrollo Web</a></li>
-              <li><a href="#servicios">E-Commerce</a></li>
-              <li><a href="#servicios">Soporte Técnico</a></li>
-              <li><a href="#servicios">Diseño UI/UX</a></li>
+              <li><a href="index.html#servicios">Desarrollo Web</a></li>
+              <li><a href="index.html#servicios">E-Commerce</a></li>
+              <li><a href="index.html#servicios">Soporte Técnico</a></li>
+              <li><a href="index.html#servicios">Diseño UI/UX</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
             <h3>Empresa</h3>
             <ul>
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#precios">Nuestros Planes</a></li>
-              <li><a href="#testimonios">Testimonios</a></li>
-              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="index.html#como-trabajamos">Cómo Trabajamos</a></li>
+              <li><a href="index.html#precios">Nuestros Planes</a></li>
+              <li><a href="index.html#testimonios">Testimonios</a></li>
             </ul>
           </div>
 
