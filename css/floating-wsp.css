@@ -1,0 +1,74 @@
+/* Floating WhatsApp Button con Efecto RGB */
+.floating-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #26b95c;
+  color: #FFF;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* Borde un poco iluminado por defecto (estático) */
+  box-shadow: 0 0 12px rgba(38, 185, 92, 0.4);
+}
+
+.floating-wsp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.floating-wsp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(38, 185, 92, 0.8);
+}
+
+.floating-wsp:hover::before {
+  /* Solo anima y resalta cuando se pasa el mouse */
+  animation: hover-glow 1s infinite alternate;
+}
+
+.floating-wsp svg {
+  width: 35px;
+  height: 35px;
+  fill: currentColor;
+}
+
+@keyframes hover-glow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(38, 185, 92, 0.6);
+  }
+
+  100% {
+    transform: scale(1.4);
+    box-shadow: 0 0 25px rgba(60, 255, 100, 0.9);
+  }
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 768px) {
+  .floating-wsp {
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .floating-wsp svg {
+    width: 30px;
+    height: 30px;
+  }
+}
