@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demos | Impulsar Studio</title>
+  <title>Nuestros Clientes | Impulsar Studio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,100 +34,61 @@
       margin: 0 auto;
     }
 
-    .portfolio-grid {
+    .clients-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       padding: 0 8% 80px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    .project-card {
+    .client-card {
       background: #1e293b;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid rgba(255, 255, 255, 0.05);
-      transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
-    .project-card:hover {
+    .client-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       border-color: rgba(37, 99, 235, 0.4);
     }
 
-    .project-image {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      position: relative;
-      background: #111827;
-    }
-
-    .project-image img {
-      width: 100%;
-      height: 100%;
+    .client-logo {
+      height: 80px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
       object-fit: contain;
-      transition: transform 0.6s ease;
     }
 
-    .project-card:hover .project-image img {
+    .client-card:hover .client-logo {
       transform: scale(1.05);
     }
 
-    .project-category {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background: #2563eb;
-      color: white;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
+    .client-name {
+      font-size: 1.2rem;
       font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    .project-info {
-      padding: 30px;
-    }
-
-    .project-info h3 {
-      font-size: 1.4rem;
       color: #fff;
-      margin-bottom: 10px;
-    }
-
-    .project-info p {
-      color: #94a3b8;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .project-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #3b82f6;
-      font-weight: 600;
-      text-decoration: none;
+      margin-bottom: 8px;
       transition: color 0.3s ease;
     }
 
-    .project-link:hover {
-      color: #60a5fa;
+    .client-card:hover .client-name {
+      color: #3b82f6;
     }
 
-    .project-link svg {
-      transition: transform 0.3s ease;
-    }
-
-    .project-link:hover svg {
-      transform: translateX(4px);
+    .client-category {
+      font-size: 0.9rem;
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -144,6 +105,7 @@
       <ul class="nav-links">
         <li><a href="index.html#servicios">Servicios</a></li>
         <li><a href="index.html#precios">Planes</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
       </ul>
       <a href="demos.html" class="nav-cta">Demos</a>
     </div>
@@ -159,104 +121,29 @@
     </button>
   </header>
 
-  <!-- ================= HEADER PORTAFOLIO ================= -->
+  <!-- ================= HEADER CLIENTES ================= -->
   <section class="portfolio-header" data-animation="fade-up">
-    <h1>Nuestras Demos</h1>
+    <h1>Nuestros Clientes</h1>
     <p>
-      Explorá algunas de nuestras demos y descubrí cómo podemos transformar tu
-      negocio.
+      Marcas y empresas que confían en nosotros para potenciar su presencia digital.
     </p>
   </section>
 
-  <!-- ================= GRID DE PROYECTOS ================= -->
-  <section class="portfolio-grid">
-    <!-- Proyecto 1: Tienda Online -->
-    <div class="project-card" data-animation="fade-up" data-delay="100">
-      <div class="project-image">
-        <img src="img/demo_automotor.png" alt="Demo Automotor" />
-      </div>
-      <div class="project-info">
-        <h3>Demo Automotor</h3>
-        <p>
-          Plataforma web ideal para concesionarias o agencias de autos, con
-          catálogo de vehículos y opciones de contacto.
-        </p>
-        <a href="https://impulsarplantilla1.netlify.app/" target="_blank" class="project-link">
-          Ver Demo
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
+  <!-- ================= GRID DE CLIENTES ================= -->
+  <section class="clients-grid">
+    <a href="https://holistcyoga.netlify.app/" target="_blank" class="client-card" data-animation="fade-up"
+      data-delay="100" style="text-decoration: none;">
+      <img src="img/logo_metanoia.png" alt="Metanoia Holística" class="client-logo" />
+      <h3 class="client-name">Metanoia Holística</h3>
+      <span class="client-category">Salud y Bienestar</span>
+    </a>
 
-    <!-- Proyecto 2: Menú QR -->
-    <div class="project-card" data-animation="fade-up" data-delay="200">
-      <div class="project-image">
-        <img src="img/impulsarstudio_menu.png" alt="Menú Digital Inteligente" />
-      </div>
-      <div class="project-info">
-        <h3>Menú Interactivo Premium</h3>
-        <p>
-          Solución digital con diseño oscuro elegante, ideal para parrillas, steakhouses y restaurantes de alta cocina.
-          Destaca los platos principales y mejora la experiencia del cliente.
-        </p>
-        <a href="https://menuimpulsar.netlify.app/" target="_blank" class="project-link">
-          Ver Demo
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Proyecto 3: Página Institucional -->
-    <div class="project-card" data-animation="fade-up" data-delay="300">
-      <div class="project-image">
-        <img src="img/demo_dentista.png" alt="Demo Clínica Dental" />
-      </div>
-      <div class="project-info">
-        <h3>Demo Clínica Dental</h3>
-        <p>
-          Sitio web profesional para dentistas y clínicas, resaltando
-          servicios odontológicos y facilitando turnos online.
-        </p>
-        <a href="https://impulsarplantilla2.netlify.app/" target="_blank" class="project-link">
-          Ver Demo
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Proyecto 4: Menú QR Modalidad Oscura -->
-    <div class="project-card" data-animation="fade-up" data-delay="400">
-      <div class="project-image">
-        <img src="img/verdeNatural.png" alt="Menú Interactivo Oscuro" />
-      </div>
-      <div class="project-info">
-        <h3>Menú Interactivo Orgánico</h3>
-        <p>
-          Catálogo digital luminoso e intuitivo, pensado para locales de comida saludable, opciones vegetarianas o
-          cafeterías. Incluye navegación sencilla por categorías.
-        </p>
-        <a href="https://impulsamenu.netlify.app/" target="_blank" class="project-link">
-          Ver Demo
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
+    <a href="https://Ecumdz.com.ar" target="_blank" class="client-card" data-animation="fade-up" data-delay="200"
+      style="text-decoration: none;">
+      <img src="img/logo_ecu.png" alt="Ecumdz" class="client-logo" />
+      <h3 class="client-name">Ecumdz</h3>
+      <span class="client-category">Sector Automotor</span>
+    </a>
   </section>
 
   <!-- ================= FOOTER ================= -->
@@ -325,8 +212,9 @@
         <div class="footer-column">
           <h3>Contacto Directo</h3>
           <ul>
-            <li><a href="#">📞 +54 261 534 0836</a></li>
-            <li><a href="#">✉ impulsards@gmail.com</a></li>
+            <li><a href="tel:+5492615340836">📞 +54 261 534 0836</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=impulsards@gmail.com" target="_blank">✉
+                impulsards@gmail.com</a></li>
           </ul>
         </div>
       </div>
